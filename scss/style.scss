@@ -1,0 +1,819 @@
+/*global start*/
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus {
+    color: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*global end*/
+
+header.site-header {
+    background: $clr-darkblue;
+    font-size: 18px;
+    padding: 14px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+}
+
+header.site-header.sticky {
+    background: $clr-darkblue;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    padding: 10px 0;
+    position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+    color: $clr-skin;
+}
+
+.site-logo img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.site-nav a {
+    padding: 8px 20px !important;
+    display: inline-block;
+    font-weight: 600;
+    color: $clr-white;
+    font-size: 18px;
+    font-family: "Playfair Display", serif;
+
+    &:hover {
+        color: $clr-skin;
+        border-bottom: 2px solid $clr-skin;
+    }
+}
+
+button.search-btn i.fas.fa-search {
+    color: $clr-skin;
+}
+
+.site-header {
+    padding: 10px 0;
+}
+
+
+.headerflex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
+}
+
+nav.site-nav {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.closed-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none !important;
+}
+
+.search-input:focus-visible {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*header end*/
+
+
+
+/*footer-css-start*/
+
+.footer {
+    background: $clr-darkblue;
+    padding: 50px 0;
+    text-align: center;
+
+    &-logo {
+        img {
+            max-width: 250px;
+        }
+    }
+
+    &-links {
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 26px;
+        }
+
+        h3 {
+            color: $clr-skin;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        a {
+            color: $clr-white;
+            font-size: 18px;
+
+            &:hover {
+                color: $clr-skin;
+            }
+        }
+    }
+
+    &-adresse {
+        h2 {
+            color: $clr-darkblue;
+        }
+
+        h3 {
+            color: $clr-skin;
+        }
+
+        p {
+            color: $clr-darkblue;
+        }
+    }
+
+    &-mails {
+
+        a,
+        i {
+            color: $clr-white;
+        }
+
+    }
+}
+
+.social-signals {
+    padding: 25px 0;
+
+    i {
+        color: $clr-white;
+        font-size: 24px;
+        text-align: center;
+        line-height: 40px;
+        margin: 0 10px;
+        border: 1px solid $clr-white;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        transition: .3s linear;
+
+        &:hover {
+            color: $clr-skin;
+        }
+    }
+}
+
+/*footer-css-end*/
+
+/*privacy-policy start*/
+.privacysection.banner {
+    background-image: url(../images/privacybanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.59);
+        z-index: -1;
+        height: 450px;
+    }
+}
+
+.privacy-text {
+    padding: 40px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .privay-wrap {
+        font-family: "PT Sans Narrow", sans-serif;
+
+        li {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        h3 {
+            color: $clr-skin;
+        }
+
+        p {
+            color: $clr-darkblue;
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+}
+
+/*privacy-policy-end*/
+
+
+/*terms-start*/
+.termssection.banner {
+    background-image: url(../images/termsbanner.jpg);
+    margin-top: 0;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 450px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: -1;
+        height: 450px;
+    }
+}
+
+.terms-wrap p:nth-child(1) {
+    font-size: 25px !important;
+    font-weight: 700;
+    color: $clr-skin !important;
+}
+
+.terms-text {
+    padding: 40px 0;
+    font-family: "PT Sans Narrow", sans-serif;
+
+    .terms-wrap {
+        li {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        p {
+            color: $clr-darkblue;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        h3 {
+            color: $clr-skin;
+        }
+    }
+}
+
+/*terms- end*/
+
+/*cookie start*/
+.cookie-alert {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    left: 0;
+}
+
+.cookie-alert.show {
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+    background: $clr-skin;
+    padding: 6px 22px;
+    font-size: 20px;
+    color: $clr-white;
+    border: 1px solid $clr-skin;
+
+    &:hover {
+        background-color: transparent;
+        color: $clr-skin;
+    }
+}
+
+.card-body h3 {
+    color: $clr-skin;
+}
+
+/*cookie end*/
+
+/*Newsletter start*/
+.newsletter-part {
+    padding: 50px 0;
+}
+
+.newsletter-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.newsletter-heading h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: $clr-darkblue;
+}
+
+.newsletter-heading p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.news-form {
+    display: flex;
+}
+
+.news-form input {
+    height: 45px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: #e8e8e8;
+}
+
+.news-form button {
+    width: 19%;
+    height: 45px;
+    border: none;
+    background: $clr-darkblue;
+    border: 1px solid $clr-darkblue;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+
+.news-form button:hover {
+    background: transparent;
+    color: $clr-darkblue;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.download-wrap img {
+    max-width: 150px;
+    margin-inline: 20px;
+    margin-top: 20px;
+}
+
+.download-app .newsletter-wrap {
+    max-width: 100%;
+    background: #363692;
+    box-shadow: none;
+}
+
+.download-app .newsletter-heading h4 {
+    color: #fff;
+}
+
+section.newsletter {
+    background: #efefef;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+section.newsletter.download-app {
+    background: transparent;
+    margin-top: 0;
+}
+
+/*Newsletter end*/
+
+
+/*Start Faq css*/
+.faq-page {
+    width: 100%;
+    background-color: $clr-white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.casino-text.hoteli {
+    padding: 0 0 50px 0 !important;
+}
+
+.faq-item {
+    padding: 20px;
+    border-bottom: 1px solid #21355557;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    font-size: 18px;
+    line-height: 25px;
+    color: $clr-skin;
+    font-weight: 700;
+}
+
+.faq-section {
+    padding: 50px 0;
+}
+
+.faq-answer {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    p {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+.faq-answer.active {
+    border-bottom: 1px solid gray;
+}
+
+.icon-container i {
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-container i.active {
+    transform: rotate(90deg);
+}
+
+/*End Faq css*/
+
+
+/*home-css-start*/
+.homebanner.banner {
+    background-image: url(../images/homebanner.jpg);
+    height: 700px;
+    position: relative;
+    background-position: bottom;
+
+    &::after {
+        height: 700px;
+    }
+}
+
+.topcontent-picture {
+    max-width: 550px;
+    margin-left: auto;
+    overflow: hidden;
+
+    img {
+        border-radius: 10px;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(2);
+        }
+    }
+}
+
+
+section.topest-content {
+    padding: 50px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
+}
+
+figure.gallery-picture {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+}
+
+figure.gallery-picture * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+figure.gallery-picture img {
+    opacity: 1;
+    width: 100%;
+    transition: opacity 0.35s;
+    height: 350px;
+    object-fit: cover;
+}
+
+figure.gallery-picture:after {
+    background: #213555b5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    opacity: 0.75;
+    -webkit-transform: skew(-45deg) scaleX(0);
+    transform: skew(-45deg) scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+figure.gallery-picture figcaption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+figure.gallery-picture h2 {
+    margin: 0;
+    width: 100%;
+    font-size: 34px;
+    font-family: 'Cormorant Garamond';
+    opacity: 1;
+    padding: 0 30px;
+    display: inline-block;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    &::after {
+        content: none;
+    }
+}
+
+
+figure.gallery-picture a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+figure.gallery-picture:hover:after,
+figure.gallery-picture.hover:after {
+    -webkit-transform: skew(-45deg) scaleX(1);
+    transform: skew(-45deg) scaleX(1);
+    transition: all 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+figure.gallery-picture:hover figcaption h2,
+figure.gallery-picture.hover figcaption h2,
+figure.gallery-picture:hover figcaption p,
+figure.gallery-picture.hover figcaption p {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+figure.gallery-picture:hover figcaption h2,
+figure.gallery-picture.hover figcaption h2 {
+    opacity: 1;
+}
+
+.hotelpicture-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+
+.hotel-picture img {
+    display: inline-block;
+    height: 350px;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.blog-picture {
+    overflow: hidden;
+
+    img {
+        height: 350px;
+        object-fit: cover;
+
+        &:hover {
+            opacity: 0.5;
+            transform: scale(1.5);
+            transition: .3s;
+        }
+    }
+}
+
+.blogs-content {
+    padding: 40px 0;
+}
+
+.blogs-text {
+    h3 {
+        font-size: 28px;
+        line-height: normal;
+        font-weight: 500;
+        color: $clr-skin;
+    }
+
+    p {
+        color: $clr-darkblue;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+section.topest-contents {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.readmore__content {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+button.readmore__toggle {
+    background: $clr-darkblue;
+    color: $clr-white;
+    padding: 8px 28px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 2px solid $clr-darkblue ;
+    display: block;
+    margin: 0 auto;
+}
+
+.readmore__content p {
+    text-align: center;
+}
+
+.mainhotels-content {
+    font-family: "PT Sans Narrow", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+
+    h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 35px;
+        color: $clr-darkblue;
+    }
+
+    p {
+        color: $clr-white !important;
+    }
+
+    ul li {
+        color: $clr-white !important;
+    }
+}
+
+.mainhotel-bg {
+    background: #e7d2838c;
+}
+
+.mainhotels-picture img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/*Banners-Css*/
+.mainhotels {
+    background: linear-gradient(rgb(65 56 56 / 58%), rgba(0, 0, 0, 0.8)), url(../images/mainhotel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+    height: 100%;
+    padding: 5px 0 170px 0;
+
+    h2 {
+        color: $clr-skin;
+        padding: 20px 0;
+    }
+}
+
+.boutiquebanner.banner {
+    background-image: url(../images/boutiquebanner.jpg);
+    position: relative;
+}
+
+.casinohotelbanner.banner {
+    background-image: url(../images/casinohotel-banner.jpg);
+    position: relative;
+}
+
+.motelsbanner.banner {
+    background-image: url(../images/motelbanner.jpg);
+    background-position: bottom;
+    position: relative;
+}
+
+.hostelsbanner.banner {
+    background-image: url(../images/hostelbanner.jpg);
+    position: relative;
+}
+
+/*Banners-Css*/
+/*# sourceMappingURL=style.css.map */

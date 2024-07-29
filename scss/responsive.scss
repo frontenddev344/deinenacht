@@ -1,0 +1,273 @@
+@import './mixins';
+@import './variables';
+@import './typography';
+/*media queries start*/
+@media screen and (max-width: 1199px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .site-logo img {
+        max-width: 180px;
+    }
+
+    .footer-logo img {
+        max-width: 180px;
+    }
+
+    .site-nav a {
+        display: inline-block;
+        font-size: 13px;
+    }
+
+    button.btn.dropdown-toggle {
+        font-size: 13px;
+    }
+
+    .primary-btn {
+        a {
+            font-size: 15px;
+            padding: 10px 61px;
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .site-nav a {
+        display: inline-block;
+        padding: 8px 9px;
+    }
+
+    .site-nav li {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    /*header start*/
+    .site-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        background: $clr-darkblue;
+        transition: 0.4s cubic-bezier(0, 0, 0.13, 0.61);
+        transform: translateX(-100%);
+    }
+
+    .site-nav ul {
+        display: block;
+        padding: 75px 60px 0;
+        display: inline-block !important;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .closed-menu {
+        font-size: 40px;
+        color: $clr-white;
+        position: absolute;
+        top: -5px;
+        right: 15px;
+        display: inline-block;
+    }
+
+    .closed-menu a:hover {
+        color: $clr-white;
+    }
+
+    .closed-menu {
+        display: block;
+    }
+
+    .toggle .site-nav {
+        transform: translateX(0);
+    }
+
+    .closed-menu {
+        display: block;
+    }
+
+    .site-header {
+        padding: 20px 0;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999999;
+        transition: all 0.5s linear;
+    }
+
+    .site-header .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .site-nav ul {
+        display: block !important;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .site-nav li a {
+        font-size: 17px;
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        text-transform: capitalize;
+        color: $clr-white;
+        position: relative;
+        white-space: nowrap;
+    }
+
+    .site-nav li a:hover::after {
+        width: 100%;
+        transition: all 0.3s linear;
+    }
+
+    .site-nav .closed-menu a {
+        font-size: 30px;
+        background-color: $clr-skin;
+    }
+
+    .menu-toggle .bar-1,
+    .bar-2,
+    .bar-3 {
+        height: 2px;
+        background-color: $clr-skin;
+        margin: 0.6rem 0;
+        transition: all 0.3s linear;
+        display: block;
+    }
+
+    ul.dropdown-content {
+        position: absolute;
+        width: 250px;
+        background: transparent;
+        top: 100%;
+        left: 0;
+        background: $clr-white;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .bar-2 {
+        width: 30px;
+        border: 1px solid $clr-white;
+    }
+
+    .bd-header-top__meta {
+        span {
+            display: block;
+            color: $clr-white;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+        }
+
+        a {
+            display: block;
+            color: $clr-white;
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+    }
+
+    nav.site-nav {
+        max-width: unset;
+        margin: unset;
+    }
+
+    .bannertitle p {
+        font-size: 20px;
+    }
+
+    .mainhotels-content h4 {
+        font-size: 20px;
+    }
+
+    .social-signals i {
+        margin: 0 6px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .homebanner.banner {
+        height: 400px;
+    }
+
+    .homebanner.banner::after {
+        height: 400px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hotelpicture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-item {
+        padding: 15px;
+    }
+
+    .social-signals i {
+        margin: 0 6px;
+    }
+
+    .footer-links ul {
+        gap: 9px;
+        flex-wrap: wrap;
+
+        li a {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .site-nav {
+        width: 100%;
+    }
+
+    .news-form input {
+        width: 60%;
+    }
+
+    .news-form button {
+        width: 38%;
+    }
+}
+
+/*# sourceMappingURL=responsive.css.map */

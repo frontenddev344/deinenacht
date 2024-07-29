@@ -1,0 +1,18 @@
+$breakpoints: (
+xs :395px,    
+sm :575px,
+md: 768px,
+lg: 992px,
+xl:1024px,
+xxl:1400px,
+);
+
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+@if map-has-key($mq-breakpoints, $mq-breakpoint) {
+ $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+}
+ @media screen and (max-width: #{$mq-breakpoint}) {
+ @content;
+}
+}
+

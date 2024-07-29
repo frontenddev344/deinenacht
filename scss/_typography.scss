@@ -1,0 +1,123 @@
+@import './variables';
+@import './mixins';
+
+li {
+    list-style: none;
+}
+
+a,
+button {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+p {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.primary-btn {
+    a {
+        background: $clr-skin;
+        padding: 10px 122px;
+        font-size: 17px;
+        border: 1px solid $clr-skin;
+        border-radius: 6px;
+        display: inline-block;
+        color: $clr-white;
+
+        @include mq(sm) {
+            padding: 7px 38px !important;
+        }
+
+        &:hover {
+            background-color: transparent;
+            color: $clr-skin;
+        }
+    }
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.44);
+    z-index: 0;
+    height: 450px;
+}
+
+.banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+
+.bannertitle {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+
+    h1 {
+        color: $clr-white;
+    }
+
+    p {
+        color: $clr-skin;
+        font-size: 30px;
+    }
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: $clr-darkblue;
+
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: $clr-skin;
+    border-radius: 10px;
+
+    @include mq(md) {
+        font-size: 36px;
+    }
+
+    @include mq(sm) {
+        font-size: 25px;
+    }
+}
+
+h2 {
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 500;
+    color: $clr-skin;
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+
+    @include mq(lg) {
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    @include mq(sm) {
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+
+h3 {
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 500;
+    margin-bottom: 0;
+}
