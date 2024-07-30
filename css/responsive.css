@@ -297,7 +297,7 @@ h3 {
   .hotelpicture-grid {
     grid-template-columns: 1fr;
   }
-  .blog-grid {
+  .blog-main {
     grid-template-columns: 1fr;
   }
   .faq-question {

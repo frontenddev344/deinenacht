@@ -684,13 +684,18 @@ figure.gallery-picture.hover figcaption h2 {
     }
 }
 
-.blog-grid {
+.blog-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-bottom: 50px;
 }
-
+.blog-grid h3 {
+    text-align: center;
+    padding: 20px 0;
+    color: #e5d283;
+    font-weight: 700;
+}
 .blog-picture {
 
     img {
