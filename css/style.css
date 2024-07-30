@@ -380,12 +380,6 @@ nav.site-nav {
   height: 450px;
 }
 
-.terms-wrap p:nth-child(1) {
-  font-size: 25px !important;
-  font-weight: 700;
-  color: #E5D283 !important;
-}
-
 .terms-text {
   padding: 40px 0;
   font-family: "PT Sans Narrow", sans-serif;
@@ -832,12 +826,18 @@ button.readmore__toggle {
 
 .mainhotel-bg {
   background: rgba(231, 210, 131, 0.5490196078);
+  padding: 30px;
 }
 
 .mainhotels-picture img {
   height: 400px;
   object-fit: cover;
   width: 100%;
+  border-radius: 30px;
+}
+.mainhotels-picture img:hover {
+  filter: brightness(0.7);
+  transition: 0.3s;
 }
 
 /*Banners-Css*/
