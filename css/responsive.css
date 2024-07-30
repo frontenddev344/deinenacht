@@ -258,7 +258,7 @@ h3 {
   }
   .bar-2 {
     width: 30px;
-    border: 1px solid #fff;
+    border: 1px solid #E5D283;
   }
   .bd-header-top__meta span {
     display: block;
@@ -324,6 +324,9 @@ h3 {
   .mainhotels-content {
     padding: 20px 0;
   }
+  .newsletter-wrap {
+    max-width: 550px;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-nav {
@@ -333,7 +336,10 @@ h3 {
     width: 60%;
   }
   .news-form button {
-    width: 38%;
+    width: 22%;
+  }
+  .mainhotels {
+    padding: 5px 0 75px 0;
   }
 }
 

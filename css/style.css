@@ -461,8 +461,8 @@ a.btn.btn-primary.accept-cookies:hover {
   color: #333;
 }
 
-.news-form {
-  display: flex;
+.blogs-text h3 {
+  margin-bottom: 20px;
 }
 
 .news-form input {

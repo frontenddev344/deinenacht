@@ -172,7 +172,7 @@
 
     .bar-2 {
         width: 30px;
-        border: 1px solid $clr-white;
+        border: 1px solid $clr-skin;
     }
 
     .bd-header-top__meta {
@@ -257,7 +257,9 @@
     .mainhotels-content {
         padding: 20px 0;
     }
-
+    .newsletter-wrap {
+        max-width: 550px;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -270,7 +272,10 @@
     }
 
     .news-form button {
-        width: 38%;
+        width: 22%;
+    }
+    .mainhotels {
+        padding: 5px 0 75px 0;
     }
 }
 
