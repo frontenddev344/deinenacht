@@ -288,6 +288,9 @@ h3 {
   .social-signals i {
     margin: 0 6px;
   }
+  .news-form button {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 767px) {
   .homebanner.banner {
@@ -327,16 +330,24 @@ h3 {
   .newsletter-wrap {
     max-width: 550px;
   }
+  .news-form button {
+    margin-top: 13px;
+  }
+  .news-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-form button {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-nav {
     width: 100%;
   }
   .news-form input {
-    width: 60%;
-  }
-  .news-form button {
-    width: 22%;
+    width: 78%;
   }
   .mainhotels {
     padding: 5px 0 75px 0;
