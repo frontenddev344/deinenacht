@@ -858,4 +858,33 @@ button.readmore__toggle {
 }
 
 /*Banners-Css*/
+
+#content {
+    display: none;
+    padding: 10px 0;
+}
+
+div#content p {
+    color: $clr-white;
+}
+
+button#showButton {
+    background: $clr-darkblue;
+    padding: 11px 22px;
+    color: $clr-white;
+    display: block;
+    width: 100%;
+    max-width: 168px;
+    border-radius: 5px;
+    border: 1px solid $clr-darkblue;
+    margin-top: 10px;
+    font-size: 18px;
+
+    &:hover {
+        background-color: $clr-skin;
+        border: 1px solid $clr-skin;
+        color: $clr-darkblue;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -906,6 +906,33 @@ button.readmore__toggle {
 }
 
 /*Banners-Css*/
+#content {
+  display: none;
+  padding: 10px 0;
+}
+
+div#content p {
+  color: #fff;
+}
+
+button#showButton {
+  background: #213555;
+  padding: 11px 22px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  max-width: 168px;
+  border-radius: 5px;
+  border: 1px solid #213555;
+  margin-top: 10px;
+  font-size: 18px;
+}
+button#showButton:hover {
+  background-color: #E5D283;
+  border: 1px solid #E5D283;
+  color: #213555;
+}
+
 
 
 /*# sourceMappingURL=style.css.map */

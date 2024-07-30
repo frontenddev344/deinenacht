@@ -51,3 +51,44 @@ class readMore {
 
 const initReadMore = new readMore();
 initReadMore.bootstrap()
+
+
+
+//3 Drop-LinksAfter//
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var button = document.getElementById('showButton');
+//     var content = document.getElementById('content');
+
+//     button.addEventListener('click', function() {
+//         if (content.style.display === 'none' || content.style.display === '') {
+//             content.style.display = 'block';
+//             button.textContent = 'Lese weniger';
+//         } else {
+//             content.style.display = 'none';
+//             button.textContent = 'Mehr lesen';
+//         }
+//     });
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var buttons = document.querySelectorAll('.showButton');
+    var contents = document.querySelectorAll('.content');
+
+    buttons.forEach(function(button, index) {
+        button.addEventListener('click', function() {
+            var content = contents[index];
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                button.textContent = 'Lese weniger';
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Mehr lesen';
+            }
+        });
+    });
+});
+
+//3 Drop-LinksAfter//
