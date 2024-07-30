@@ -726,12 +726,18 @@ figure.gallery-picture.hover figcaption h2 {
   padding-bottom: 50px;
 }
 
+.hotel-picture {
+  overflow: hidden;
+}
+
 .hotel-picture img {
   display: inline-block;
   height: 350px;
 }
 .hotel-picture img:hover {
-  opacity: 0.5;
+  filter: brightness(0.5);
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 
 .blog-grid {
@@ -741,16 +747,12 @@ figure.gallery-picture.hover figcaption h2 {
   padding-bottom: 50px;
 }
 
-.blog-picture {
-  overflow: hidden;
-}
 .blog-picture img {
   height: 350px;
   object-fit: cover;
 }
 .blog-picture img:hover {
   opacity: 0.5;
-  transform: scale(1.5);
   transition: 0.3s;
 }
 
@@ -858,6 +860,36 @@ button.readmore__toggle {
 
 .hostelsbanner.banner {
   background-image: url(../images/hostelbanner.jpg);
+  position: relative;
+}
+
+.blogculinary.banner {
+  background-image: url(../images/culinary-banner.jpg);
+  position: relative;
+}
+
+.blogbudget.banner {
+  background-image: url(../images/budgetfriendly-banner.jpg);
+  position: relative;
+}
+
+.blogfamily.banner.banner {
+  background-image: url(../images/familyfriendly-banner.jpg);
+  position: relative;
+}
+
+.blogimportanttips.banner {
+  background-image: url(../images/importanttips-banner.jpg);
+  position: relative;
+}
+
+.bloginfo.banner {
+  background-image: url(../images/information-banner.jpg);
+  position: relative;
+}
+
+.blogultimate.banner {
+  background-image: url(../images/ultimate-banner.jpg);
   position: relative;
 }
 
