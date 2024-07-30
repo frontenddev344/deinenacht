@@ -211,7 +211,6 @@ header.site-header.sticky {
 }
 .site-nav a:hover {
   color: #E5D283;
-  border-bottom: 2px solid #E5D283;
 }
 
 button.search-btn i.fas.fa-search {
