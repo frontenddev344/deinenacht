@@ -116,6 +116,11 @@ h3 {
   font-weight: 500;
   margin-bottom: 0;
 }
+@media screen and (max-width: 575px) {
+  h3 {
+    font-size: 22px;
+  }
+}
 
 /*media queries start*/
 @media screen and (max-width: 1199px) {

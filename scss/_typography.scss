@@ -120,4 +120,7 @@ h3 {
     line-height: normal;
     font-weight: 500;
     margin-bottom: 0;
+    @include mq(sm) {
+        font-size: 22px;
+    }
 }
