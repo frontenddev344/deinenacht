@@ -798,6 +798,11 @@ button.readmore__toggle {
   display: block;
   margin: 0 auto;
 }
+button.readmore__toggle:hover {
+  background-color: #E5D283;
+  border: 2px solid #E5D283;
+  color: #213555;
+}
 
 .readmore__content p {
   text-align: center;
@@ -925,6 +930,7 @@ button#showButton {
   border: 1px solid #213555;
   margin-top: 10px;
   font-size: 18px;
+  transition: 0.3s linear;
 }
 button#showButton:hover {
   background-color: #E5D283;

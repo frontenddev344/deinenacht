@@ -744,6 +744,11 @@ button.readmore__toggle {
     border: 2px solid $clr-darkblue ;
     display: block;
     margin: 0 auto;
+    &:hover{
+        background-color: $clr-skin;
+        border: 2px solid $clr-skin;
+        color: $clr-darkblue;
+    }
 }
 
 .readmore__content p {
@@ -878,6 +883,7 @@ button#showButton {
     border: 1px solid $clr-darkblue;
     margin-top: 10px;
     font-size: 18px;
+    transition: .3s linear;
 
     &:hover {
         background-color: $clr-skin;
