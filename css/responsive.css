@@ -352,6 +352,9 @@ h3 {
   .mainhotels {
     padding: 5px 0 75px 0;
   }
+  .disclaimer-wrapper h3 {
+    font-size: 25px;
+}
 }
 
 
