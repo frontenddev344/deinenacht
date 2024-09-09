@@ -153,6 +153,9 @@ h3 {
   .site-nav li {
     font-size: 15px;
   }
+  .hotel-picture-text h3 {
+    font-size: 25px;
+}
 }
 @media screen and (max-width: 991px) {
   /*header start*/
@@ -291,6 +294,9 @@ h3 {
   .news-form button {
     font-size: 15px;
   }
+  .hotel-picture-text h3 {
+    font-size: 20px;
+}
 }
 @media screen and (max-width: 767px) {
   .homebanner.banner {
@@ -341,6 +347,10 @@ h3 {
   .news-form button {
     width: 45%;
   }
+  .hotel-picture-text h3 {
+    font-size: 27px;
+}
+
 }
 @media screen and (max-width: 575px) {
   .site-nav {
