@@ -740,6 +740,10 @@ figure.gallery-picture.hover figcaption h2 {
 .hotel-picture {
   overflow: hidden;
 }
+.hotel-picture a {
+
+  height: 100%;
+}
 
 .hotel-picture img {
   display: inline-block;
