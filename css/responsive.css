@@ -296,6 +296,7 @@ h3 {
   }
   .hotel-picture-text h3 {
     font-size: 21px;
+    font-weight: 700;
 }
 }
 @media screen and (max-width: 767px) {
