@@ -349,6 +349,10 @@ h3 {
   }
   .hotel-picture-text h3 {
     font-size: 27px;
+    font-weight: 600;
+}
+.hotel-picture-text p {
+  font-size: 16px;
 }
 
 }
