@@ -924,6 +924,11 @@ button.readmore__toggle:hover {
   position: relative;
 }
 
+.banner.contact-bnr {
+  background-image: url(../images/contact-bnr.jpg);
+  position: relative;
+}
+
 /*Banners-Css*/
 #content {
   display: none;
@@ -1102,6 +1107,11 @@ section.contact-main {
 
 .readmore__contentt h2 {
   margin-top: 0;
+}
+
+.ssl-logo {
+  max-width: 120px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
