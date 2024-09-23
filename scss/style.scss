@@ -934,14 +934,14 @@ button#showButton {
     object-fit: cover;
 }
 .who-text {
-    padding: 25px;
+    padding-bottom: 25px;
 }
 section.who-we-are .row {
     align-items: center;
 }
-section.who-we-are {
-    margin-bottom: 50px;
-}
+// section.who-we-are {
+//     margin-bottom: 50px;
+// }
 .who-text ul {
     padding-left: 20px;
     list-style: disc;
@@ -1017,4 +1017,7 @@ section.who-we-are {
 }
 section.contact-main {
     padding-bottom: 50px;
+}
+.readmore__contentt h2 {
+    margin-top: 0;
 }

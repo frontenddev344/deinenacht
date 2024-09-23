@@ -987,15 +987,11 @@ button#showButton:hover {
 }
 
 .who-text {
-  padding: 25px;
+  padding-bottom: 25px;
 }
 
 section.who-we-are .row {
   align-items: center;
-}
-
-section.who-we-are {
-  margin-bottom: 50px;
 }
 
 .who-text ul {
@@ -1087,6 +1083,10 @@ section.who-we-are {
 
 section.contact-main {
   padding-bottom: 50px;
+}
+
+.readmore__contentt h2 {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
