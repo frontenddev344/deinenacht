@@ -1114,4 +1114,8 @@ section.contact-main {
   margin: 0 auto;
 }
 
+section.topest-contents.text-left, section.topest-contents.text-left h2 {
+  text-align: left;
+}
+
 /*# sourceMappingURL=style.css.map */
