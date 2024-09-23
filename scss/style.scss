@@ -860,7 +860,18 @@ button.readmore__toggle {
     background-image: url(../images/ultimate-banner.jpg);
     position: relative;
 }
-
+.banner.banner-personal {
+    background-image: url(../images/personal-bnr.jpg);
+    position: relative;
+}
+.banner.refund-banner {
+    background-image: url(../images/return-page.jpeg);
+    position: relative;
+}
+.banner.abt-bnr {
+    background-image: url(../images/abt-bnr.jpg);
+    position: relative;
+}
 /*Banners-Css*/
 
 #content {
