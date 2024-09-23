@@ -253,19 +253,6 @@ nav.site-nav {
 }
 
 /*header end*/
-.disclaimer{
-  margin-bottom: 20px;
-}
-.disclaimer-wrapper h3{
-  margin-bottom: 15px;
-  font-size: 30px;
-  font-weight: 600;
-}
-
-
-
-
-
 /*footer-css-start*/
 .footer {
   background: #213555;
@@ -740,52 +727,16 @@ figure.gallery-picture.hover figcaption h2 {
 .hotel-picture {
   overflow: hidden;
 }
-.hotel-picture-image{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+
+.hotel-picture img {
+  display: inline-block;
   height: 350px;
 }
-
-.hotel-picture-image img {
-  display: inline-block;
-height: 100%;
-width: 100%;
-}
-.hotel-picture-image img:hover {
+.hotel-picture img:hover {
   filter: brightness(0.5);
   transform: scale(1.5);
   transition: 0.3s;
 }
-.hotel-picture-text {
-  background-color: #e5d283;
-  padding: 20px 10px;
-}
-
-.featured-cards-btn{
-  background-color: #213555;
-  padding: 10px 20px;
-  border: 1px solid #213555;
-  outline: none;
-  color: #fff;
-  display: inline-block;
-  margin-left: 5px;
-  margin-top: 10px;
-  font-size:18px;
-  font-weight:500;
-  animation: all 0.5s linear;
-}
-.featured-cards-btn:hover{
-  background-color: #fff;
-  color: #213555  ;
-}
-.hotel-picture-text h3{
-margin-bottom: 10px;
-}
-.hotel-picture-text p{
-  margin-bottom: 5px;
-  font-weight: 600;
-  }
 
 .blog-main {
   display: grid;
@@ -988,5 +939,154 @@ button#showButton:hover {
 }
 
 
+.hotel-picture-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  height: 350px;
+}
+
+.hotel-picture-image img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.hotel-picture-text {
+  background-color: #e5d283;
+  padding: 20px 10px;
+}
+
+.hotel-picture-text h3 {
+  margin-bottom: 10px;
+}
+
+.hotel-picture-text p {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.who-text h3 {
+  color: #e5d283;
+  margin-bottom: 10px;
+}
+
+.who-text p {
+  font-size: 18px;
+}
+
+.who-img {
+  height: 350px;
+  overflow: hidden;
+}
+
+.who-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.who-text {
+  padding: 25px;
+}
+
+section.who-we-are .row {
+  align-items: center;
+}
+
+section.who-we-are {
+  margin-bottom: 50px;
+}
+
+.who-text ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.who-text ul li {
+  list-style: disc;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.contact-text {
+  text-align: center;
+  margin: 12px 0;
+}
+
+.contact-text h3 {
+  color: #e5d283;
+  margin-bottom: 10px;
+}
+
+.contact-text ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #213555;
+  color: #213555;
+  padding: 10px;
+  font-size: 22px;
+  border-radius: 28px;
+  transition: all 0.3s linear;
+}
+
+.contact-text ul li a:hover {
+  background-color: #213555;
+  color: #fff;
+}
+
+.contact-text ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-text h2 {
+  margin-top: 0;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  height: 45px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.form-group textarea {
+  height: 250px;
+}
+
+.form-group {
+  padding: 10px 0;
+}
+
+.form-group button {
+  padding: 10px 40px;
+  border: 1px solid #e5d283;
+  background: #e5d283;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s linear;
+}
+
+.form-group button:hover {
+  background-color: transparent;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.contact-main {
+  padding-bottom: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

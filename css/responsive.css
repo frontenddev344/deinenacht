@@ -153,9 +153,6 @@ h3 {
   .site-nav li {
     font-size: 15px;
   }
-  .hotel-picture-text h3 {
-    font-size: 25px;
-}
 }
 @media screen and (max-width: 991px) {
   /*header start*/
@@ -294,10 +291,14 @@ h3 {
   .news-form button {
     font-size: 15px;
   }
-  .hotel-picture-text h3 {
-    font-size: 21px;
-    font-weight: 700;
-}
+  .footer-links li {
+    margin: 8px 10px;
+    margin-bottom: 0;
+  }
+  .footer-links ul {
+    gap: 0;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 767px) {
   .homebanner.banner {
@@ -325,7 +326,7 @@ h3 {
     margin: 0 6px;
   }
   .footer-links ul {
-    gap: 9px;
+    gap: 0px;
     flex-wrap: wrap;
   }
   .footer-links ul li a {
@@ -348,14 +349,21 @@ h3 {
   .news-form button {
     width: 45%;
   }
-  .hotel-picture-text h3 {
-    font-size: 27px;
-    font-weight: 600;
-}
-.hotel-picture-text p {
-  font-size: 16px;
-}
-
+  section.who-we-are .row {
+    flex-direction: column-reverse;
+  }
+  section.who-we-are {
+    margin-bottom: 30px;
+  }
+  .who-text {
+    padding: 0 0 25px;
+  }
+  .who-img {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    margin: 12px 0;
+  }
 }
 @media screen and (max-width: 575px) {
   .site-nav {
@@ -367,12 +375,19 @@ h3 {
   .mainhotels {
     padding: 5px 0 75px 0;
   }
-  .disclaimer-wrapper h3 {
-    font-size: 25px;
-}
-.hotel-picture-text p {
-  font-size: 14px;
-}
+  .readmore__contentt h2 {
+    font-size: 35px;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  .form-group textarea {
+    height: 200px;
+  }
+  .form-group {
+    padding: 8px 0;
+  }
 }
 
 

@@ -213,6 +213,14 @@
     .news-form button {
         font-size: 15px;
     }
+    .footer-links li {
+        margin: 8px 10px;
+        margin-bottom: 0;
+    }
+    .footer-links ul {
+        gap: 0;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -249,7 +257,7 @@
     }
 
     .footer-links ul {
-        gap: 9px;
+        gap: 0px;
         flex-wrap: wrap;
 
         li a {
@@ -274,6 +282,21 @@
     .news-form button {
         width: 45%;
     }
+    section.who-we-are .row {
+        flex-direction: column-reverse;
+    }
+    section.who-we-are {
+        margin-bottom: 30px;
+    }
+    .who-text {
+        padding: 0 0 25px;
+    }
+    .who-img {
+        margin-bottom: 20px;
+    }
+    .footer-links {
+        margin: 12px 0;
+    }
 }
 
 @media screen and (max-width:575px) {
@@ -285,6 +308,19 @@
     }
     .mainhotels {
         padding: 5px 0 75px 0;
+    }
+    .readmore__contentt h2 {
+        font-size: 35px;
+    }
+    .contact-text h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+    .form-group textarea {
+        height: 200px;
+    }
+    .form-group {
+        padding: 8px 0;
     }
 }
 
